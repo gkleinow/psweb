@@ -5,8 +5,8 @@ FROM alpine
 LABEL maintainer="gkleinow1980@gmail.com"
 
 # Install Node and NPM
-#RUN apk add --update nodejs npm curl
-RUN apk add --update nodejs-npm
+RUN apk add --update nodejs npm curl
+#RUN apk add --update nodejs-npm
 
 # Copy app to /src
 COPY . /src
